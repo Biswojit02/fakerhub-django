@@ -177,32 +177,38 @@ student.css styles the page
 
 ```
 fakerhub-django/
+|
+├── fakerproject/               # Main Django project config
+|   ├── __init__.py
+|   ├── asgi.py                 # ASGI config for production
+|   ├── settings.py             # Database, apps, middleware config 
+|   ├── urls.py                 # Main URL routing
+|   └── wsgi.py                 # WSGI config for production
 │
-├-- fakerapp/
-|   |-- admin.py
-|   |-- apps.py
-|   |-- migrations/
-|   |   |-- 0001_initial.py
-|   |   `-- __init__.py
-|   |-- models.py
-|   |-- tests.py
-|   `-- views.py
-|-- fakerproject/
-|   |-- asgi.py
-|   |-- settings.py
-|   |-- urls.py
-|   `-- wsgi.py
-|-- static/
-|   `-- css/
-|       `-- student.css
-|-- templates/
-|   `-- fakerapp/
-|       `-- student.html
-|-- manage.py
-|-- populate.py
-|-- requirements.txt
-|-- LICENSE
-└── README.md                       # Documentation
+├── fakerapp                    # Core Django application
+|   ├── migrations/             # Database migration files      
+|   |   ├── 0001_initial.py
+|   |   └── __init__.py
+|   ├── admin.py                # Django admin configuration
+|   ├── apps.py                 # App configuration
+|   ├── models.py               # Database models
+|   ├── tests.py                # Unit tests
+|   └── views.py                # View functions (controllers)
+|
+├── templates/
+|   └── fakerapp/               # App-specific templates
+|       └── student.html        # Home/dashboard
+|
+├── static/
+|   └── css/
+|       └── student.css         # Custom styling
+|
+├── manage.py                   # Django CLI
+├── populate.py
+├── .gitignore                  # Git ignore rules
+├── requirements.txt            # Python dependencies
+├── LICENSE
+└── README.md                   # Documentation
 ```
 
 ---
