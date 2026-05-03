@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment (if created later)
+venv/
+env/
+ENV/
+
+# Django (if created later)
+db.sqlite3
+staticfiles/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

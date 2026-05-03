@@ -1,0 +1,4 @@
+Python (Version: 3.12)
+Django (Version: 5.1)
+faker module
+MySQL
